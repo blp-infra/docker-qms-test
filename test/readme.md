@@ -1,6 +1,7 @@
 # docker build commands
 ### Abc image
-```docker build -t qmsabc -f Dockerfile .
+```
+docker build -t qmsabc -f Dockerfile .
 ```
 ### def image
 ```docker build -t qmsdef -f Dockerfile2 .```
