@@ -2,11 +2,11 @@
 FROM qms_6.3:Abc
 
 # Set working directory
-WORKDIR /app
+ WORKDIR /app
 
-COPY requirements.txt /app/requirements.txt
-# Copy your Python script into the container
-COPY script.py /app/script.py
+# COPY requirements.txt /app/requirements.txt
+# # Copy your Python script into the container
+# COPY script.py /app/script.py
 
 # Install Python if not present OR install required packages
 RUN apt-get update && apt-get install -y python3
