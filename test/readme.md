@@ -45,8 +45,7 @@ Use these commands if GPU is not required.
 ```docker run -d --name latest --gpus '"device=0"' -p 8559:8559 -p 8879:8879 -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:latest```
 
 ### Run def with GPU device 1
-```docker run -d --name def --gpus '"device=1"' -p 8555:8555 -p 8889:8889 -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:def
-```
+```docker run -d --name def --gpus '"device=1"' -p 8555:8555 -p 8889:8889 -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:def```
 ### Run AbC with GPU device 2
 ```docker run -d --name AbC --gpus '"device=2"' -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:AbC```
 
