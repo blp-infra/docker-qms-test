@@ -51,6 +51,6 @@ Use these commands if GPU is not required.
 
 # Run the monitor bash script to monitor the Containers
 
-``` bash monitor.sh  ```
+``` bash monitor.sh  ``` or 
 ```/bin/bash monitor.sh```
 
