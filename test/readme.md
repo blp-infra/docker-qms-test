@@ -3,7 +3,7 @@
 - Each image has its own Dockerfile.
 
 ### Build AbC image
-```docker build -f Dockerfile -t qms_6.3:AbC .```
+```docker build -f Dockerfile -t qms_6.3:Abc .```
 
 ### Build def image
 ```docker build -f Dockerfile2 -t qms_6.3:def .```
@@ -16,7 +16,7 @@
 - Because we explicitly specify the tag using -t, Docker will NOT rename it to latest.
 ### The final image names will be:
 
-- qms_6.3:AbC
+- qms_6.3:Abc
 
 - qms_6.3:def
 
@@ -33,7 +33,7 @@ Use these commands if GPU is not required.
 ```docker run -d --name def -p 8555:8555 -p 8889:8889 -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:def```
 
 ### Run AbC
-```docker run -d --name AbC -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:AbC```
+```docker run -d --name AbC -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:Abc```
 
 ## Run Containers (GPU Mode)
 
@@ -47,7 +47,7 @@ Use these commands if GPU is not required.
 ### Run def with GPU device 1
 ```docker run -d --name def --gpus '"device=1"' -p 8555:8555 -p 8889:8889 -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:def```
 ### Run AbC with GPU device 2
-```docker run -d --name AbC --gpus '"device=2"' -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:AbC```
+```docker run -d --name AbC --gpus '"device=2"' -p 8554:8554 -p 8888:8888 -p 8000:8000 qms_6.3:Abc```
 
 # Run the monitor bash script to monitor the Containers
 

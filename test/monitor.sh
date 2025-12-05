@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # List of container names to monitor
-CONTAINERS=("latest" "def" "AbC")   # <-- update names here
+CONTAINERS=("latest" "def" "Abc")   # <-- update names here
 
 while true; do
     sleep 10
