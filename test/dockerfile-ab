@@ -1,0 +1,15 @@
+# Use a DeepStream base image
+FROM nvcr.io/nvidia/deepstream:7.0-triton-multiarch
+
+# Install dependencies if needed
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-gi \
+    python3-gst-1.0 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /root/
+# Copy your application code
+# COPY my_app.py .
+
+# Example command
+CMD ["bash"]
